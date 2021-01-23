@@ -1,5 +1,5 @@
 {% set name = "emoji" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91a0822695cd11142989b1d3c80c9a4fbba5fba296253c7915f32248456386c0
+  sha256: 87c934907deb25e9621b0c48cac2051ad932636ad5946c4de6ba0f5f45a61fcd
 
 build:
   noarch: python
