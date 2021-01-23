@@ -5,11 +5,11 @@ Home: https://github.com/carpedm20/emoji/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emoji-feedstock/blob/master/LICENSE.txt)
 
 Summary: Emoji for Python
 
-
+Development: https://github.com/carpedm20/emoji/
 
 Current build status
 ====================
