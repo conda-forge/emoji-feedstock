@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f68ac28915a2221667cddb3e6c589303c3c6954c6c5af6fefaec7f9bdf72fdca
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools >=65.0.0
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - typing_extensions >=4.7.0
 
 test:
@@ -28,6 +28,7 @@ test:
     - emoji
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
